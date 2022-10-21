@@ -1,6 +1,6 @@
 {
-  "name": "Fireship",
-  "short_name": "Fireship",
+  "name": "PWA",
+  "short_name": "PWA",
   "start_url": "/?home=true",
   "shortcuts": [
     {
