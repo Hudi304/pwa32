@@ -37,7 +37,11 @@
   </p>
 
   <p>
-    <a href="#" onclick="openSMSMobile();"></a>
+    <a href="#" onclick="openSMSMobile()">Laur</a>
+  </p>
+
+  <p>
+    <a href="#" onclick="smsLaur()">SMS Laur</a>
   </p>
 
   <script>
@@ -46,9 +50,17 @@
     }
 
     function openSMSMobile(e) {
-      window.open('sms:0756230357', '_self');
+      // window.open('sms:0756230357', '_self');
+      window.open('sms:1234567890&body=textGoesHere', '_self');
       return false;
     }
+
+
+    function smsLaur(e) {
+      window.open('sms:0756230357&body=hello from pwa', '_self');
+      return false;
+    }
+
   </script>
 
 </body>
