@@ -1,6 +1,6 @@
 {
-    "name": "CarZone",
-    "short_name": "Carzone",
+    "name": "pwa",
+    "short_name": "pwa",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#2A3443",
