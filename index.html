@@ -1,37 +1,31 @@
+</html>
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Awesome Web Features</title>
-
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="manifest" href="manifest.json">
-
-  <script defer src="app/bluetooth.js"></script>
-  <script defer src="app/contact-picker.js"></script>
-  <script defer src="app/device-motion.js"></script>
-  <script defer src="app/file-system.js"></script>
-  <script defer src="app/idle-detection.js"></script>
-  <script defer src="app/sharing.js"></script>
-  <script defer src="app/idle-detection.js"></script>
+  <title>Title</title>
+  <link rel="canonical" href="https://{hudi304}.github.io/{pwa}/" />
+  <style type="text/css">
+    /* --- application CSS here --- */
+    * {
+      background-color: #F5F4F0;
+      font-family: Georgia, serif;
+    }
+  </style>
 </head>
 
 <body>
-  <!-- <h2>Bluetooth</h2>
-    <button id="ble">Connect Device</button>
-    <p id="motion"></p> -->
-  <!-- <h2>Contact Picker</h2>
-    <button id="contacts">Select Contacts</button>  -->
-  <!-- <h2>Idle Detection</h2>
-    <button id="idle">Idle Detection</button> -->
-  <h2>File System</h2>
-  <button id="fs-get">Read File</button>
-  <button id="fs-save">Write File</button>
-  <!-- <h2>Web Share</h2>
-    <button id="share">Share on Twitter</button>   -->
+  <h1>Content</h1>
+  <script>
+    // register ServiceWorker, remember to use absolute path!
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register('/{pwa}/sw.js', { scope: '/{pwa}/' })
+    }
 
+
+
+  </script>
   <p>
     <a href="tel:0754302599">Click to Call Hudi!</a>
   </p>
@@ -73,28 +67,6 @@
   <p>
     <a href="facetime-audio:ilie.filip@techquarter.io">facetime-audio:ilie.filip@techquarter.io</a>
   </p>
-
-
-
-
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js');
-    }
-
-    function openSMSMobile(e) {
-      // window.open('sms:0756230357', '_self');
-      window.open('sms:1234567890&body=textGoesHere', '_self');
-      return false;
-    }
-
-
-    function smsLaur(e) {
-      window.open('sms:0756230357&body=hello from pwa', '_self');
-      return false;
-    }
-
-  </script>
 
 </body>
 
