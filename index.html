@@ -58,9 +58,14 @@
 <body>
     <div class="page_loader"></div>
 
+    <p>
+        <a href="#" onclick="openSMSMobile()">Laur sms:1234567890&body=textGoesHere</a>
+    </p>
 
+    <p>
+        <a href="sms:0756230357?body=Hello">SMS Laur sms:0756230357?body=Hello</a>
+    </p>
 
-    <script src="js/app.js"></script>
 
     <p>
         <a href="#" onclick="openSMSMobile()">Laur sms:1234567890&body=textGoesHere</a>
@@ -70,6 +75,11 @@
         <a href="sms:0756230357?body=Hello">SMS Laur sms:0756230357?body=Hello</a>
     </p>
 
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js');
+        }
+    </script>
 
 </body>
 
